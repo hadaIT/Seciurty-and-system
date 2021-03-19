@@ -20,12 +20,12 @@ const dateFormat = require("dateformat");
 var table = require("table").table;
 const Discord = require("discord.js");
 const cmd = require("node-cmd");
-const prefix = "s+";
-client.login("ODIyNDYzNDQxNjYyMjQ2OTcy.YFSoxQ.elQLDtzClLC0QWAhyRXvgJTFhdU");
+const prefix = "s=";
+client.login("");
 client.on("ready", async () => {
   console.log(`Logged in as ${client.user.username}!`);
   client.user.setStatus("idle");
-  client.user.setActivity(`${prefix}help | Steam Bot  `, { type: "PLAYING" });
+  client.user.setActivity(`${prefix}help | 120890 user  `, { type: "PLAYING" });
   client.guilds.cache.forEach(g => {
     if (g.member(client.user).hasPermission("ADMINISTRATOR")) {
       g.fetchInvites().then(guildInvites => {});
@@ -47,27 +47,33 @@ client.on("message", async message => {
                    
 ━━━────╮✪╭────━━━
 🔰 | Security Commands
- anti ban [Number]
- anti kick [Number]
- anti channel [Number]
- anti role [Number]
- anti bot [on / off]
+> • anti ban [Number]
+> • anti kick [Number]
+> • anti channel [Number]
+> • anti role [Number]
+> • anti bot [on / off]
 ━━━────╮✪╭────━━━
 🌀 | Public Commands
- bot
- server
- ping
- profile
- uinvites
- user
- avatar 
- roles
- emoji
+> • bot
+> • server
+> • ping
+> • profile
+> • uinvites
+> • user
+> • avatar 
+> • roles
+> • emoji
 ━━━────╮✪╭────━━━
 ⭐ | Moderation Commands
- ban
- kick , mute , unmute , slowmode , bans
- say , unban[userid/all]
+> • ban [userid]
+> • kick [userid]
+> • mute [userid]
+> • unmute [userid]
+> • slowmode
+> • bans
+> • say
+> • unban[userid/all]
+> • Prefix Bot [s=]
  __ [SUPPORT](https://discord.gg/bRN8hde6) __ - __ [INVITE](https://discord.com/api/oauth2/authorize?client_id=806636450392965120&permissions=8&scope=bot) __
 
 `);
