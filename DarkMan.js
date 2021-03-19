@@ -20,12 +20,12 @@ const dateFormat = require("dateformat");
 var table = require("table").table;
 const Discord = require("discord.js");
 const cmd = require("node-cmd");
-const prefix = "-";
+const prefix = "s+";
 client.login("");
 client.on("ready", async () => {
   console.log(`Logged in as ${client.user.username}!`);
   client.user.setStatus("idle");
-  client.user.setActivity(`${prefix}help | By Dark Man`, { type: "PLAYING" });
+  client.user.setActivity(`${prefix}help | Steam Bot  `, { type: "PLAYING" });
   client.guilds.cache.forEach(g => {
     if (g.member(client.user).hasPermission("ADMINISTRATOR")) {
       g.fetchInvites().then(guildInvites => {});
@@ -43,20 +43,20 @@ client.on("message", async message => {
     
       .setDescription(`
       
-  
+       Steam Bot Commands
                    
-━──╮•╭──━
+━━━────╮✪╭────━━━
 🛡️ | Security Commands
  anti ban [Number]
  anti kick [Number]
  anti channel [Number]
  anti role [Number]
  anti bot [on / off]
-━──╮•╭──━
+━━━────╮✪╭────━━━
 ⚙️ | Public Commands
  bot , server , ping , profile , uinvites , hightRole , nick
  user , avatar , roles , emoji
-━──╮•╭──━
+━━━────╮✪╭────━━━
 ⚡ | Moderation Commands
  , ban , kick , mute , unmute , slowmode , bans
  say , unban[userid/all]
@@ -690,7 +690,7 @@ client.on("message", message => {
       .addField("**ID Bot**", `[ ${client.user.id} ]`, true)
       .addField("**Prefix Bot**", `[ ${prefix} ]`, true)
       .addField("**Bot Language**", `[ Java Script ]`, true)
-      .setFooter("Security");
+      .setFooter("Steam Bot");
 
     message.channel.send(tnx);
   }
@@ -1110,13 +1110,13 @@ client.on("message", prof => {
       .setAuthor(prof.guild.name)
       .setThumbnail(prof.guild.iconURL())
       .setTitle("**Info Server**")
-      .addField(" ⚠️| **Server Name:**", `${prof.guild.name}`)
-      .addField(" 👑| **Owner Server:**", `${prof.guild.owner}`)
-      .addField(" 🔰| **Server ID:**", `${prof.guild.id}`)
-      .addField(" ✅| **Created:**", `${prof.guild.createdAt.toLocaleString()}`)
-      .addField(" 🚦| **Members:**", `${prof.guild.memberCount}`)
-      .addField(" 🔳| **Channels:**", `${prof.guild.channels.cache.size}`)
-      .addField(" 🌐| **Region**:", `${prof.guild.region}`)
+      .addField(" ✪| **Server Name:**", `${prof.guild.name}`)
+      .addField(" ✪| **Owner Server:**", `${prof.guild.owner}`)
+      .addField(" ✪| **Server ID:**", `${prof.guild.id}`)
+      .addField(" ✪| **Created:**", `${prof.guild.createdAt.toLocaleString()}`)
+      .addField(" ✪| **Members:**", `${prof.guild.memberCount}`)
+      .addField(" ✪| **Channels:**", `${prof.guild.channels.cache.size}`)
+      .addField(" ✪| **Region**:", `${prof.guild.region}`)
       .addField(" **Roles:**", ` ${prof.guild.roles.cache.size}`)
       .setFooter(`Requested | ${prof.author.tag}`, prof.author.avatarURL())
       .setTimestamp();
