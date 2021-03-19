@@ -21,7 +21,7 @@ var table = require("table").table;
 const Discord = require("discord.js");
 const cmd = require("node-cmd");
 const prefix = "s+";
-client.login("");
+client.login("ODIyNDYzNDQxNjYyMjQ2OTcy.YFSoxQ.elQLDtzClLC0QWAhyRXvgJTFhdU");
 client.on("ready", async () => {
   console.log(`Logged in as ${client.user.username}!`);
   client.user.setStatus("idle");
@@ -46,19 +46,27 @@ client.on("message", async message => {
        Steam Bot Commands
                    
 ━━━────╮✪╭────━━━
-🛡️ | Security Commands
+🔰 | Security Commands
  anti ban [Number]
  anti kick [Number]
  anti channel [Number]
  anti role [Number]
  anti bot [on / off]
 ━━━────╮✪╭────━━━
-⚙️ | Public Commands
- bot , server , ping , profile , uinvites , hightRole , nick
- user , avatar , roles , emoji
+🌀 | Public Commands
+ bot
+ server
+ ping
+ profile
+ uinvites
+ user
+ avatar 
+ roles
+ emoji
 ━━━────╮✪╭────━━━
-⚡ | Moderation Commands
- , ban , kick , mute , unmute , slowmode , bans
+⭐ | Moderation Commands
+ ban
+ kick , mute , unmute , slowmode , bans
  say , unban[userid/all]
  __ [SUPPORT](https://discord.gg/bRN8hde6) __ - __ [INVITE](https://discord.com/api/oauth2/authorize?client_id=806636450392965120&permissions=8&scope=bot) __
 
